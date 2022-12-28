@@ -54,13 +54,13 @@
 /* ----------------Cards----------------- */
 
 .hidden {
-  width: 320px;
+  width: 100%;
   overflow:-moz-hidden-unscrollable;
 }
 
 .render_guitars_container {
   margin-top: 40px;
-  width: 320px;
+  width: 100%;
   border: 2px solid red;
   overflow: scroll;
   
