@@ -3,9 +3,842 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding: 60px;
+
+  
 }
 
+
+:root {
+  --color_grey: rgb(161, 154, 154);
+}
+
+
+
 body {
-  background-color: rgb(232, 236, 236);
+  /* background-color: #232020; */
+  background-color: #111;
   
+} 
+
+
+
+
+
+.base_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* ----Menu---- */
+
+.nav { 
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  
+  align-items: center;
+  background: linear-gradient(rgba(5,7,12,0.76),rgba(5,7,12,0.84));
+  border-bottom: 1px solid gray;
+
+  
+}
+
+
+.menu {
+  width: 300px;
+  
+  
+}
+
+.menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+  
+}
+
+
+
+.menu ul li a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+
+
+.menu ul li a:hover {
+  color: rgb(248, 43, 43);
+  
+}
+
+.icon_cart , .logo_container {
+  margin: 0 15px;
+
+}
+
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login i {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+
+
+/* ----Main----- */
+
+.main_container {
+  width: 100%;
+  height: 100%;
+  
+  position: relative;
+  top: -60px;
+
+}
+
+.main {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  
+  align-items: center;
+  background-image: linear-gradient(rgba(5,7,12,0.86),rgba(5,7,12,0.74)),url(img/main_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150% 100%;
+
+
+
+}
+
+
+
+
+.left_main_container{
+  width: 45%;
+  height: 500px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  
+  
+  gap: 15px;
+}
+
+.left_main_container h3 {
+  color: white;
+  font-size:15px ;
+  /* margin-top: 40px; */
+}
+
+.release {
+  width: 100%;
+  margin-top: 80px;
+  margin-left: 34px;
+}
+
+
+
+.new_guitar_container h2 {
+  color: white;
+  font-size: 40px;
+  margin-left: 30px;
+}
+
+
+.paul {
+  color: orange;
+}
+
+.text_signature_container {
+  margin-left: 30px;
+}
+
+.text_signature_container h3 {
+  font-size: 18px;
+  color: rgb(161, 154, 154);
+}
+
+.signature_img_container {
+  width: 50%;
+  height: 100px;
+  
+  margin-top: 100px;
+  margin-left: 38%;
+  
+}
+
+.signature_img_container img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+.right_main_container {
+  width: 55%;
+  height: 600px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  
+  
+}
+
+.guitar_paul_container {
+  width: 40%;
+  height: 100%;
+  
+}
+
+.guitar_paul_container img {
+  width: 100%;
+  height: 100%;
+ 
+}
+
+
+.info_guitar_paul_container {
+  width: 300px;
+  margin-right:10px ;
+  display: flex;
+  justify-content: center;
+  
+  gap: 15px;
+  
+}
+
+.info_guitar_paul_container h3 {
+  font-size: 28px;
+  
+  color: white;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+
+.info_guitar_paul {
+  width: 190px;
+  display: flex;
+
+  
+}
+
+.info_guitar_paul h4 {
+  color: rgb(161, 154, 154);
+  font-size: 18px;
+}
+
+.info_guitar_paul_container li {
+  width: 80px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.info_guitar_paul_container li a {
+  background-color: rgb(250, 167, 13);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: black;
+  letter-spacing: 1px;
+  box-shadow: 1px 1px 1px 2px rgba(11, 11, 11, 0.8);
+}
+
+
+
+/* ------Adventage-----------*/
+.adventage_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}
+
+.items_adventage_container {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  border: 2px solid blue;
+}
+
+
+
+
+/* -----About------ */
+
+
+.about_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 90%;
+}
+
+.tittle_about_container , .info_about_container {
+  width: 100%;
+  color:white;
+  
+}
+
+.tittle_about_container h3 {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.tittle_about_container h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.music_shop {
+  color: orange;
+}
+
+
+.about_img_container {
+  width: 100%;
+  height: 600px;
+}
+
+.about_img_container img {
+  width: 100%;
+  height: 100%;
+}
+
+.info_about_container p {
+  margin-top: 30px;
+  color: var(--color_grey);
+}
+
+.experience_year_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.experience_year_award{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+  padding: 20px;
+  gap: 12px;
+}
+
+.fa-award{
+  color: orange;
+  font-size: 40px;
+}
+
+.year {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.year span {
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.fa-plus {
+  font-size: 18px;
+  color: orange;
+}
+
+.experience {
+  color: var(--color_grey) ;
+  font-size: 18px;
+}
+
+
+.items_about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.items_about div {
+  display: flex;
+  gap: 10px;
+}
+
+.fa-compact-disc {
+  color: orange;
+}
+
+
+
+
+
+
+
+
+
+/* ----------Tienda de guitarras---------------- */
+.shop {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.swiper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 ;
+  
+  
+}
+
+
+
+
+.filter_btn {
+  width:100%;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 10px;
+
+  
+}
+
+.btn_scroll{
+  font-size: 16px;
+  padding: 10px;
+  color:rgb(81, 79, 79);
+  border: none;
+  border-radius: 10px;
+  border: 2px solid grey;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: white;
+}
+
+.btn_scroll:hover {
+  background-color: #252525;
+  color: white;
+  border: 2px solid gray;
+}
+
+
+
+/* ----------------Cards----------------- */
+
+
+
+.render_guitars_container {
+  margin-top: 40px;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+
+.cards {
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin: 0 10px;
+ 
+}
+
+
+.guitar_card {
+  width: 300px;
+  
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  align-items: center;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.10);
+  padding: 15px;
+}
+
+.image_card_container {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+}
+
+.image_card_container img {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+
+}
+
+.image_card_container img:hover {
+  transform: scale(1.1);
+}
+
+.guitar_data_container {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgb(177, 170, 170);
+  
+  
+}
+
+.guitar_data {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 50%;
+  margin-top: 20px;
+}
+
+
+.guitar_data h3 {
+  
+  font-size: 20px;
+  
+}
+
+.guitar_data span {
+  color: rgb(223, 185, 12);
+  font-weight: 800;
+  font-size: 24px;
+} 
+
+.guitar_data_container i {
+
+ font-size: 30px;
+ color: rgb(155, 153, 152);
+ cursor: pointer;
+ 
+}
+
+.guitar_card button {
+  border: none;
+  border-radius: 10px;
+  padding:12px;
+  background-color: #252525;
+  color: white;
+  width: 80%;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition:0.5s;
+}
+
+
+
+/* --------------Carrito---------- */
+.cart_container {
+  width: 50%;
+  height: 400px;
+  
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  
+  right: 0;
+  background-color: rgb(170, 166, 166);
+
+  border: 1px solid black;
+  z-index: 2;
+  
+  
+
+}
+
+
+
+
+
+
+
+.active {
+   background-color: #252525;
+  color: white;
+  border: 2px solid gray;
+  border-radius: 10px; 
+  
+  
+}
+  
+
+/* ----Carta del producto */
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.card_product_cart {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 20px;
+  
+  border: 2px solid red;
+}
+
+/* ----Recien agregado ----- */
+.products_cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  gap: 10px;
+  width: 420px;
+  
+  height: auto;
+  border: 2px solid red;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 5px;
+
+}
+
+.products_cart::-webkit-scrollbar {
+  width: 10px;
+  background-color: none;
+  border: 2px solid #f1f2f3;
+  border-radius: 10px;
+}
+
+.products_cart::-webkit-scrollbar-thumb {
+  background-color: rgb(28, 27, 26);
+  border-radius: 10px;
+  
+}
+
+.not_product_container {
+  width: 80%;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.not_product_container div {
+  width: 100%;
+  background-color: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.total_container {
+  margin: 10px;
+}
+
+
+/*  --------*/
+
+.img_product_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 130px;
+}
+
+.img_product_cart img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgb(235, 232, 232)
+}
+
+
+.data_product_cart {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  
+}
+
+.type_guitar_cart {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid gray;
+  width: 180px;
+  height: 60%;
+  gap: 2px;
+}
+
+.type_guitar_cart h2 {
+  font-size: 20px;
+
+}
+
+.type_guitar_cart span{
+  font-size: 14px;
+  color: rgb(88, 86, 86);
+}
+
+
+/* ----Cantidad y precio */
+.price_product_container {
+  
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.quantity {
+  display: flex;
+  gap: 10px;
+}
+
+.quantity button {
+  
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-weight: 700;
+  background-color: white;
+  cursor: pointer;
+}
+
+.quantity :nth-child(2) {
+  color: black;
+  font-weight: 600;
+}
+
+
+.price_product_container span {
+  color: rgb(189, 156, 8);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+.card_product_cart i {
+  color: red;
+  font-size: 25px;
+  cursor: pointer;
+  
+}
+
+
+
+/* ----icono carrito */
+
+
+.hide {
+ display: none;
+}
+
+.icon_cart {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.icon_cart i {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.products_in_cart {
+  width: 18px;
+  position: absolute;
+  margin-top: -70%;
+  margin-right: -70%;
+  color: white;
+  background-color: rgb(226, 115, 5);
+  border-radius: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
 }

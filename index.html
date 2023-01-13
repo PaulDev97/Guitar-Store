@@ -8,31 +8,248 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="querys.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+  
+
 </head>
 <body>
   
+  <header class="nav">
 
-
-  <div class="swiper">
-    <div class="filter_btn">
-      <button class="btn_scroll active" data-category="popular">Popular</button>
-      <button class="btn_scroll" data-category="electric">Electric guitar</button>
-      <button class="btn_scroll" data-category="acustic">Acustic guitar</button>
-      <button class="btn_scroll" data-category="classic">Classic guitar</button>
+    <div class="logo_container">
+      <div class="logo">Hola</div>
     </div>
-  </div>
 
+    <nav class="menu">
+      <ul>
+        <li><a href="#store">Tienda</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
 
-
-  <div class="hidden">
-
-    <div class="render_guitars_container">
-      <div class="cards">
-      
+    <div class="icons">
+      <div class="login">
+        <i class="fa-solid fa-user" ></i>
       </div>
-       
+      <div class="icon_cart">
+        <i class="fa-solid fa-cart-shopping icon"></i>
+        <span class="products_in_cart"></span>
+      </div>
+      
     </div>
+   
+    <section class="cart_container hide">
+      <div class="cart">
+        <h2>Cart</h2>
+        <div class="products_cart">
+          <!-- <div class="card_product_cart">
+  
+            <div class="img_product_cart">
+              <img src="img/gibsonyoung_cart.png" alt="">
+            </div>
+  
+            <div class="data_product_cart">
+  
+              <div class="type_guitar_cart">
+                <h2>Gibson</h2>
+                <span>Eléctrico</span>
+                <span>Variante: Red and Black</span>
+              </div>
+  
+  
+              <div class="price_product_container">
+                <div class="quantity">
+                  <button>-</button>
+                  <span>1</span>
+                  <button>+</button>
+                </div>
+                <span>$500</span>
+              </div>
+  
+            </div>
+  
+            <i class="fa-solid fa-square-xmark"></i>
+  
+  
+          </div>  -->
+        </div>
+        <div class="total_container">
+          <span>Total:</span>
+          <span class="total"></span>
+        </div>
+      </div>
+    </section>
+    
+    
+  </header>
+
+  <div class="main_container" >
+    <main id="home" class="main">
+
+      <div class="left_main_container">
+        <div class="release">
+          <h3>Nuevo lanzamiento 2023 </h3>
+        </div>
+
+        <div class="new_guitar_container">
+
+          <h2>Marsick New Series <h2>
+          <h2><b class="paul">Paul Timmons</b> Signature</h2>
+
+        </div>
+
+
+        <div class="text_signature_container">
+          <h3>Edicion limitada y firmada por el mejor.</h3>
+
+          <div class="signature_img_container">
+            <img src="img/firma_paul.png" alt=""> 
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="right_main_container">
+        <div class="guitar_paul_container">
+          <img src="img/guitar_paul.png" alt="">
+        </div>
+        <div class="info_guitar_paul_container">
+          <div class="details">
+            <h3>Detalles</h3>
+            <div class="info_guitar_paul">
+              <h4>
+                Maderas de caoba para el mástil. Pastillas con un control de volumen y otro de tono.
+              <h4> 
+            </div>
+            <li><a href="#store">Tienda</a></li>
+          </div>
+
+        </div>
+      </div>
+  
+  
+    </main>
+  
+    
   </div>
+
+  <div class="adventage_container">
+    <section class="items_adventage_container">
+      
+      <div>
+        <i class="fa-solid fa-rocket"></i>
+        <div>
+          <h3>Fast Shipping</h3>
+          <p>Order Over $1,000.00</p>
+        </div>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        <div>
+          <h3>Big Cashback</h3>
+          <p>Over 40% Cashback</p>
+        </div>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-credit-card"></i>
+        <div>
+          <h3>Quick Payment</h3>
+          <p>100% Secure</p>
+        </div>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-phone-volume"></i>
+        <div>
+          <h3>24/7 Support</h3>
+          <p>Ready For You</p>
+        </div>
+      </div>
+
+      
+
+    </section>
+  </div>
+  
+
+  <div class="about_container">
+    <section id="about">
+      <div class="tittle_about_container">
+        <h3>About "nombre de la empresa"</h3>
+        <h2>Somos la mejor <b class="music_shop">tienda de música</b> en la ciudad</h2>
+        <div class="about_img_container">
+          <img src="img/about_img.jpg" alt="">
+        </div>
+      </div>
+
+
+      <div class="info_about_container">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+        </p>
+
+        <div class="experience_year_container">
+          <div class="experience_year_award">
+            <i class="fa-solid fa-award"></i>
+            <div class="year">
+              <span>12</span><i class="fa-solid fa-plus"></i>
+            </div>
+            <span class="experience">Años de experiencia</span>
+          </div>
+
+          <div class="items_about">
+            <div><i class="fa-solid fa-compact-disc"></i> Certificado</div>
+            <div><i class="fa-solid fa-compact-disc"></i> Mejor calidad</div>
+            <div><i class="fa-solid fa-compact-disc"></i> Garantia oficial</div>
+            <div><i class="fa-solid fa-compact-disc"></i> Permiso oficial</div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+    </section>
+  </div>
+  
+
+
+
+
+  
+
+  <section id="store" class="base_container">
+
+    <div class="shop">
+
+      <div class="swiper">
+        <div class="filter_btn">
+          <button class="btn_scroll active" data-category="popular">Popular</button>
+          <button class="btn_scroll" data-category="electric">Electric guitar</button>
+          <button class="btn_scroll" data-category="acustic">Acustic guitar</button>
+          <button class="btn_scroll" data-category="others">Others</button>
+        </div>
+      </div>
+    
+    
+    
+      
+    
+        <div class="render_guitars_container">
+          <div class="cards">
+          
+          </div>
+           
+        </div>
+    </div>
+    
+  </section>
 
 
 
