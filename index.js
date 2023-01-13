@@ -113,7 +113,8 @@ const iconCart = document.querySelector('.icon')
 const cart = document.querySelector('.cart')
 
 const carritoContainer = document.querySelector('.products_cart')
-const total = document.querySelector('.total') 
+const total = document.querySelector('.total')
+const subtotal = document.querySelector('.subtotal') 
 const total_products = document.querySelector('.products_in_cart')
 const storeContainer = document.querySelector('.cards')
 const cardsContainer = document.querySelector('.cart_container')
@@ -199,7 +200,9 @@ const getCartTotal = () => {
 //5- Funcion para renderizar el precio total de los productos. al span total le hacemos inner y este va a tomar el valor de getCartTotal
 const showTotal = () => {
   //toFixed formatea un numero. Es decir le agrega la cantidad de decimales que le querramos pasar
-  total.innerHTML = `${getCartTotal().toFixed(2)}`;
+  total.innerHTML = `$${getCartTotal().toFixed(2)}`;
+  subtotal.innerHTML = `$${getCartTotal().toFixed(2)}`;
+
 }
 
 
