@@ -89,7 +89,7 @@ export const guitars = [
     id:11,
     category:'acustic',
     brand: 'Ibanez AEG',
-    img: './img/ibanez_aeg.png',
+    img: './img/acust_taylor.png',
     type:'Instrumento acústico',
     price: 500,
   },

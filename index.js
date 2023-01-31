@@ -110,7 +110,7 @@ const popularGuitars = () => {
 
 /* ------------------Logica carrito----------- */
 const iconCart = document.querySelector('.icon')
-const cart = document.querySelector('.cart')
+/* const cart = document.querySelector('.cart') */
 
 const carritoContainer = document.querySelector('.products_cart')
 const total = document.querySelector('.total')
@@ -118,7 +118,8 @@ const subtotal = document.querySelector('.subtotal')
 const total_products = document.querySelector('.products_in_cart')
 const storeContainer = document.querySelector('.cards')
 const cardsContainer = document.querySelector('.cart_container')
-
+const menu = document.querySelector('.menu')
+const icon_toggle_menu = document.querySelector('.toggle')
 
 
 
@@ -357,11 +358,6 @@ const deleteItem = e => {
 
 
 
-
-
-
-
-
 const checkState = () => {
   
   saveToLocalStorage(guitarsCarrito)
@@ -381,12 +377,20 @@ const checkState = () => {
 
 
 
-
-
-const showMenu = () => {
+const showCart = () => {
   
   cardsContainer.classList.toggle('hide')
 }
+
+const showMenu = () => {
+  menu.classList.toggle('show_menu')
+}
+
+
+
+
+
+
 
 
 
@@ -399,7 +403,8 @@ const init = () => {
 
   checkState()
 
-  iconCart.addEventListener('click',showMenu)
+  iconCart.addEventListener('click',showCart)
+  icon_toggle_menu.addEventListener('click',showMenu)
   
   /* saveToLocalStorage(guitarsCarrito)
   renderCart(guitarsCarrito) */
