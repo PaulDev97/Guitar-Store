@@ -1,8 +1,6 @@
 @media screen and (max-width: 390px){
 
-  body {
-    border: 1px solid red;
-  }
+  
 
   .logo_container {
     width: 60px;
@@ -18,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    left: -80%;
+    left: -100%;
     transition: 0.5s;
   }
 
@@ -89,7 +87,9 @@
 
 
   .release {
+    width: 50%;
     margin-left: 30px;
+    border: 1px solid red;
   }
 
   .new_guitar_container {
@@ -112,7 +112,7 @@
     
     margin-top: 100px;
     margin-left: 80px;
-    
+    border: 1px solid red;
   }
 
 

@@ -25,6 +25,9 @@ body {
   
   
 } 
+html {
+  border: 1px solid red;
+}
 
 
 
@@ -174,7 +177,7 @@ body {
 }
 
 .release {
-  width: 100%;
+  width: 50%;
   margin-top: 80px;
   margin-left: 34px;
 }
