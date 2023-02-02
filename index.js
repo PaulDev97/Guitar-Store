@@ -131,7 +131,7 @@ const saveToLocalStorage = (key) => {
 
 const cardProduct = product => {
 
-  const {id, precio, cantidad,image,name,tipo} = product
+  const {id, precio, cantidad,image,brand,tipo} = product
 
   return `
   <div class="card_product_cart">
@@ -143,9 +143,8 @@ const cardProduct = product => {
   <div class="data_product_cart">
 
     <div class="type_guitar_cart">
-      <h2>${name}</h2>
+      <h2>${brand}</h2>
       <span>${tipo}</span>
-      <span>Variante: Red and Black</span>
     </div>
 
 
@@ -155,7 +154,7 @@ const cardProduct = product => {
         <span>${cantidad}</span>
         <button class="sumar" data-id='${id}'>+</button>
       </div>
-      <span>${precio}</span>
+      <span>$${precio}</span>
     </div>
 
   </div>
@@ -248,8 +247,8 @@ const addProduct = (e) => {
 
 
 //9- Creamos esta funcion para crear un objeto para la data del producto. Esto se obtiene del product
-const productData = (id,name,precio,tipo,image) => {
-  return {id, name, precio, tipo, image};
+const productData = (id,brand,precio,tipo,image) => {
+  return {id, brand, precio, tipo, image};
 }
 
 //12- Funcion para crear producto en el carrito

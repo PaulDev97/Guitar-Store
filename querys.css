@@ -363,7 +363,8 @@
 /* ----Carrito---- */
 .cart_container {
   width: 100%;
-  height: 600px;
+  height:600px;
+  margin-top: 20px;
 }
 
 
@@ -398,7 +399,8 @@
 
 
 .card_product_cart {
-  width: 350px;
+  width: 250px;
+  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,6 +411,103 @@
   
   border: 2px solid rgb(24, 21, 21);
 }
+
+
+/*  --------*/
+
+.img_product_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 140px;
+}
+
+.img_product_cart img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgb(235, 232, 232)
+}
+
+
+.data_product_cart {
+  width: 40%;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  
+}
+
+.type_guitar_cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  border-bottom: 2px solid gray;
+  width: 100%;
+  height: 60%;
+  gap: 2px;
+}
+
+.type_guitar_cart h2 {
+  color: black;
+  font-size: 14px;
+
+}
+
+.type_guitar_cart span{
+  font-size: 14px;
+  color: rgb(88, 86, 86);
+}
+
+
+/* ----Cantidad y precio */
+.price_product_container {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  
+
+}
+
+.quantity {
+  display: flex;
+  gap: 5px;
+}
+
+.quantity button {
+  
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-weight: 700;
+  background-color: white;
+  cursor: pointer;
+}
+
+.quantity :nth-child(2) {
+  color: black;
+  font-weight: 600;
+}
+
+
+.price_product_container span {
+  color: rgb(189, 156, 8);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+
+.card_product_cart i {
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+  
+}
+
 
 /* ----Menu despegable carrito ----- */
 .products_cart {
