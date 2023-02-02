@@ -1,3 +1,46 @@
+
+@media screen and (max-width: 320px){
+
+  /* -----main----- */
+  .left_main_container {
+    margin-right: 25px;
+  }
+
+
+  .release {
+    width: 80%;
+    margin-left: 0;
+  
+  }
+
+  .release h3 {
+    font-size: 14px;
+  }
+
+  
+
+  .new_guitar_container :nth-child(1), .new_guitar_container :nth-child(3) {
+    font-size: 24px;
+  }
+
+  
+  /* ---sobre nosotros */
+  
+  .about_img_container {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    border: 2px solid red;
+  }
+
+  .about_img_container img {
+    width: 100px;
+  }
+
+
+
+}
+
 @media screen and (max-width: 390px){
 
   
@@ -177,7 +220,7 @@
 
 
 .about_img_container {
-  width: 95%;
+  width: 100%;
   height: 300px;
   margin: auto;
 }
