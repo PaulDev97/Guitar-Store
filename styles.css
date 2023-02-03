@@ -750,6 +750,13 @@ body {
 }
 
 
+/* boton cerrar */
+.back {
+  color: red;
+  position: absolute;
+  top: -10px;
+}
+
 
 .card_product_cart {
   width: 400px;

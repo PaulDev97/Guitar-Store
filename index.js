@@ -109,7 +109,6 @@ const popularGuitars = () => {
 
 
 /* ------------------Logica carrito----------- */
-const iconCart = document.querySelector('.icon')
 /* const cart = document.querySelector('.cart') */
 
 const carritoContainer = document.querySelector('.products_cart')
@@ -118,8 +117,13 @@ const subtotal = document.querySelector('.subtotal')
 const total_products = document.querySelector('.products_in_cart')
 const storeContainer = document.querySelector('.cards')
 const cardsContainer = document.querySelector('.cart_container')
+
+
 const menu = document.querySelector('.menu')
 const icon_toggle_menu = document.querySelector('.toggle')
+
+const iconCart = document.querySelector('.icon')
+const iconCloseCart = document.querySelector('.back')
 
 
 
@@ -377,13 +381,19 @@ const checkState = () => {
 
 
 const showCart = () => {
-  
   cardsContainer.classList.toggle('hide')
 }
+
+const closeCart = () => {
+  cardsContainer.classList.toggle('hide')
+}
+
 
 const showMenu = () => {
   menu.classList.toggle('show_menu')
 }
+
+
 
 
 
@@ -403,6 +413,7 @@ const init = () => {
   checkState()
 
   iconCart.addEventListener('click',showCart)
+  iconCloseCart.addEventListener('click',closeCart)
   icon_toggle_menu.addEventListener('click',showMenu)
   
   /* saveToLocalStorage(guitarsCarrito)
