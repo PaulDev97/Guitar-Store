@@ -1166,7 +1166,7 @@
 
 
 .products_cart {
-  height: 200px;
+  height: 100%;
   background-color: none;
 }
 
@@ -1208,8 +1208,8 @@
 
 
 .card_product_cart {
-  width: 270px;
-  background-color: aqua;
+  width: 290px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
