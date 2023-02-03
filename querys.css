@@ -1438,11 +1438,17 @@
   width: 50%;
 }
 
-.led_products {
+.led_products_container {
   width: 50%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  
+}
+
+.led_products {
+  width: 100%;
+  margin-left: 10px;
 }
 
 
