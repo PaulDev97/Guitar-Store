@@ -1155,8 +1155,9 @@
 /* ----Carrito---- */
 .cart_container {
   width: 100%;
-  height:600px;
-  margin-top: 20px;
+  height:430px;
+  margin-top: 30px;
+  background-color: black;
 }
 
 
@@ -1168,7 +1169,7 @@
 
 .cart {
   width: 100%;
-  height: 550px;
+  height: 400px;
   
   display: flex;
   flex-direction: column;
@@ -1309,7 +1310,7 @@
   
   gap: 10px;
   width: 100%;
-  height: auto;
+  height: 200px;
   padding: 5px;
   overflow-x: none;
   
