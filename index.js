@@ -112,8 +112,12 @@ const popularGuitars = () => {
 /* const cart = document.querySelector('.cart') */
 
 const carritoContainer = document.querySelector('.products_cart')
+
+const ledProducts = document.querySelector('.led_products')
 const total = document.querySelector('.total')
 const subtotal = document.querySelector('.subtotal') 
+
+
 const total_products = document.querySelector('.products_in_cart')
 const storeContainer = document.querySelector('.cards')
 const cardsContainer = document.querySelector('.cart_container')
@@ -210,9 +214,12 @@ const showTotal = () => {
 }
 
 
-//6- Funcion para renderizar la cantidad de productos que hay en el carrito
+//6- Funcion para renderizar la cantidad de productos que hay en el carrito 
 const cantidadProductosCarrito = () => {
   total_products.textContent = guitarsCarrito.reduce((acc,curr) => acc+curr.cantidad,0)
+
+  //Numero de productos que se esta por llevar el cliente en el monto final
+  ledProducts.innerHTML = guitarsCarrito.reduce((acc,curr) => acc+curr.cantidad,0);
 } 
 
 
