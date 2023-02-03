@@ -363,20 +363,25 @@
 /* ----Carrito---- */
 .cart_container {
   width: 100%;
-  height:600px;
-  margin-top: 20px;
+  height:100vh;
+  margin-top: none;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
 }
 
 
 .products_cart {
-  height: 200px;
+  height: 100%;
   background-color: none;
 }
 
 
 .cart {
   width: 100%;
-  height: 550px;
+  height: 100%;
   
   display: flex;
   flex-direction: column;
@@ -392,15 +397,27 @@
   justify-content: center;
   align-items: center;
   padding: 10px 0;
-  background-color: rgb(255, 79, 39);
+  /* background-color: rgb(255, 79, 39); */
+  background-color: #23272c;
   color:white;
+
+ 
+}
+
+/* boton cerrar */
+.back {
+  color: red;
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  font-size: 20px;
+  
 }
 
 
-
 .card_product_cart {
-  width: 250px;
-  background-color: aqua;
+  width: 290px;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -517,7 +534,7 @@
   
   gap: 10px;
   width: 100%;
-  height: auto;
+  height: 200px;
   padding: 5px;
   overflow-x: none;
   
@@ -558,13 +575,13 @@
 }
 
 .total_container {
-  width: 80%;
+  width: 60%;
   height: 130px;
   border-radius: 10px;
   background-color: rgb(246, 240, 240);
   color: black;
-  padding: 5px ;
-  margin-top: 10px;
+  padding: none ;
+  margin-top: 60px;
   display: flex;
   
   justify-content: center;
@@ -577,7 +594,7 @@
 
 
 
-.subtotal_container  , .final_total , .delivery_container {
+.subtotal_container  , .final_total , .delivery_container, .total_cart_container{
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -596,7 +613,16 @@
   
 }
 
+.led_products {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.hide {
+  display: none;
+ }
 
 .final_total {
   margin-top: 10px;
@@ -612,8 +638,8 @@
 }
 
 .buy_button {
-  margin-top: 10px;
-  margin-bottom: 40px;
+  margin-top: none;
+  margin-bottom: 90px;
   
 }
 
@@ -622,6 +648,8 @@
   border: 1px solid rgb(98, 89, 89);
   
 }
+
+
 
 
 
@@ -1405,10 +1433,15 @@
   
 }
 
+
+.products {
+  width: 50%;
+}
+
 .led_products {
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -1609,3 +1642,4 @@
 
 
 }
+

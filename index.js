@@ -356,7 +356,7 @@ const deleteItem = e => {
   if(!e.target.classList.contains('delete')) return;
 
   const idFilter = (e.target.dataset.id);
-  console.log(idFilter)
+  /* console.log(idFilter) */
   
   guitarsCarrito = guitarsCarrito.filter(item => item.id !== idFilter)
 
