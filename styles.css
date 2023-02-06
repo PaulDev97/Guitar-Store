@@ -755,6 +755,7 @@ body {
   color: red;
   position: absolute;
   top: -10px;
+  display: none;
 }
 
 
@@ -1037,6 +1038,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .footer {
@@ -1045,6 +1047,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
   
 }
 
@@ -1053,6 +1056,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 .footer_logo_container {

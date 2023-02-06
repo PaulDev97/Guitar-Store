@@ -1649,3 +1649,131 @@
 
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px){
+
+
+
+ /*--Main--- */
+  
+  .left_main_container {
+    margin-top: -20px;
+    
+    height: 80%;
+    
+  }
+
+  .release {
+    
+    width:80%;
+    margin-top: 50px;
+    margin-left: 28px;
+  }
+
+
+  .new_guitar_container {
+    
+    margin: 15px 0;
+  }
+
+  .new_guitar_container :nth-child(1), .new_guitar_container :nth-child(3) {
+    font-size: 30px;
+  }
+
+  .signature_img_container {
+    
+    width: 100%;
+    margin-left: 0;
+  }
+
+
+  .right_main_container {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 17px;
+    
+  }
+
+  .guitar_paul_container {
+    margin-top: 45px;
+    height: 300px;
+    
+    
+
+  }
+
+  .info_guitar_paul_container {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .details h3 {
+    font-size: 20px;
+  }
+
+  .info_guitar_paul h4 {
+    font-size: 18px;
+  }
+
+  
+
+  .cart_container {
+    width: 450px;
+    
+  }
+
+  .products_cart {
+
+  }
+
+  .type_guitar_cart h2 {
+    color: black;
+  }
+
+/* boton cerrar */
+.cart .back {
+  display:none;
+  
+}
+  
+  
+
+ 
+
+   /* ----Ventajas de la web---- */
+
+  /* lineas de lo items/ventajas */
+.first {
+  border-right: none;
+  border-bottom: 1px groove grey;
+}
+ .second {
+  border-left: none;
+  border-top: 1px groove grey;
+  border-bottom: 1px groove grey;
+} 
+
+.third {
+  border-right: none;
+  border-top: 1px groove grey;
+  border-bottom: 1px groove grey;
+} 
+.fourth {
+  border-left: none;
+  border-top: 1px groove grey;
+}
+
+
+
+.footer {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+
+}
+
+
+
+
+
+
+}
