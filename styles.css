@@ -909,6 +909,18 @@ body {
 }
 
 
+/* propiedad para desabilitar boton de compra cuando no haya producto */
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  /*Button disabled - CSS color class*/
+  
+  background-color: grey;
+
+}
+
+
+
 
 
 /*  --------*/
@@ -975,7 +987,7 @@ body {
   
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: 30%;
   font-weight: 700;
   background-color: white;
   cursor: pointer;
@@ -1001,6 +1013,13 @@ body {
   
 }
 
+.disabled_minus { 
+  cursor: not-allowed;
+  pointer-events: none;
+  /*Button disabled - CSS color class*/
+  
+  
+}
 
 
 /* ----icono carrito */

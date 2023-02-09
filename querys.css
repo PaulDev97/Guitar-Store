@@ -1907,5 +1907,15 @@
     
   }
 
+  /* propiedad para desabilitar boton de compra cuando no haya producto */
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  /*Button disabled - CSS color class*/
+  
+  background-color: red;
+
+}
+
 
 }

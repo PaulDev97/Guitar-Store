@@ -122,6 +122,8 @@ const total_products = document.querySelector('.products_in_cart')
 const storeContainer = document.querySelector('.cards')
 const cardsContainer = document.querySelector('.cart_container')
 
+const buyProductBtn = document.querySelector('.buy_button')
+
 
 const menu = document.querySelector('.menu')
 const icon_toggle_menu = document.querySelector('.toggle')
@@ -132,6 +134,7 @@ const iconCloseCart = document.querySelector('.back')
 
 
 let guitarsCarrito = JSON.parse(localStorage.getItem("cart")) || [];
+
 const saveToLocalStorage = (key) => {
   localStorage.setItem("cart", JSON.stringify(key));
 };
@@ -158,7 +161,7 @@ const cardProduct = product => {
 
     <div class="price_product_container">
       <div class="quantity">
-        <button class="restar"  data-id='${id}'>-</button>
+        <button class="restar block"  data-id='${id}'>-</button>
         <span>${cantidad}</span>
         <button class="sumar" data-id='${id}'>+</button>
       </div>
@@ -301,11 +304,12 @@ const handleQuantity = e => {
 
 const btnRestar = id => {
   const findProduct = guitarsCarrito.find(item => item.id === id)
+  const blockBtnMinus = document.querySelector('.block')
 
   if(findProduct.cantidad === 1){
-    if(window.confirm('Eliminar producto?')){
-      removeProduct(findProduct)
-    }
+    if (guitarsCarrito.length) {
+      blockBtnMinus.classList.add("disabled_minus");
+    } 
     return
   }
 
@@ -315,15 +319,7 @@ const btnRestar = id => {
 }
 
 
-//16- funcion para eliminar producto del carrito
-const removeProduct = existProduct=> {
-  //Traeme todo los productos que sean diferentes al id 
-  guitarsCarrito = guitarsCarrito.filter(item => item.id !== existProduct.id)
 
-  //Actualizamos Local y eso lo borra del localStorage
-  checkState()
-
-} 
 
 
 
@@ -368,6 +364,32 @@ const deleteItem = e => {
 
 
 
+
+
+
+
+/* Desabilitar boton de compra si no hay productos en el carrito */
+const disabledBuyBtn = (btn) => {
+  if (!guitarsCarrito.length) {
+    btn.classList.add("disabled");
+  } else {
+    btn.classList.remove("disabled");
+  }
+};
+
+
+/* Boton de comprar productos.  */
+const buyProducts = () => {
+  if(guitarsCarrito.length > 0) {
+    guitarsCarrito = []
+    renderCart(guitarsCarrito)
+    saveToLocalStorage(guitarsCarrito)
+  }
+  
+}
+
+
+
 const checkState = () => {
   
   saveToLocalStorage(guitarsCarrito)
@@ -378,6 +400,9 @@ const checkState = () => {
 
   cantidadProductosCarrito(guitarsCarrito)
 
+  disabledBuyBtn(buyProductBtn)
+
+  
   
 }
 
@@ -385,7 +410,7 @@ const checkState = () => {
 
 
 
-
+/* ---Mostrar y cerrar carrito */
 
 const showCart = () => {
   cardsContainer.classList.toggle('hide')
@@ -396,6 +421,7 @@ const closeCart = () => {
 }
 
 
+/* ---Menu responsive--- */
 const showMenu = () => {
   menu.classList.toggle('show_menu')
 }
@@ -431,6 +457,12 @@ const init = () => {
   cardsContainer.addEventListener('click', handleQuantity)
 
   carritoContainer.addEventListener('click',deleteItem)
+
+  
+
+  window.addEventListener('click', disabledBuyBtn(buyProductBtn))
+
+  buyProductBtn.addEventListener('click', buyProducts)
   
 }
 
