@@ -1277,7 +1277,7 @@ body {
   cursor: pointer;
   border-radius: 5px;
   background-color: rgb(255, 70, 70);
-  
+  border: none;
   
 }
 
