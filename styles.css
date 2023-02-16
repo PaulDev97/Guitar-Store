@@ -1191,7 +1191,7 @@ body {
 .background_login_page {
   width: 100%;
   height: 100vh;
-  background-image:linear-gradient(rgba(5,7,12,0.36),rgba(5,7,12,0.34)),url(img/login_background.jpg);
+  background-image:linear-gradient(rgba(5,7,12,0.66),rgba(5,7,12,0.74)),url(img/login_back.jpg);
   background-position: center;
   background-repeat:no-repeat;
   background-size: cover;
@@ -1203,7 +1203,7 @@ body {
 
 
 .main_login_container {
-  width: 380px;
+  width: 360px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1262,21 +1262,13 @@ body {
   color: white;
 }
 
-.inputs_form:focus {
-  border: 2px solid  turquoise;
-}
 
-.inputs_form::placeholder {
-  color: var(--color_grey);
-  text-align: center;
-  
-}
 
 .btn_form {
-  padding: 6px 2px;
+  padding: 10px 2px;
   cursor: pointer;
   border-radius: 5px;
-  background-color: rgb(255, 70, 70);
+  background-color:darkorange;
   border: none;
   
 }
@@ -1325,5 +1317,108 @@ body {
 }
 
 .send_to_register_container a {
-  color: turquoise;
+  color: orange;
 }
+
+
+
+/* -----Seccion Registro---- */
+.background_register_page {
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(5,7,12,0.66),rgba(5,7,12,0.74)),url(img/register_background.jpg);
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main_register_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.form_register_container {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color:rgba(5,7,12,0.92);
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px black;
+  padding-bottom: 20px;
+}
+
+
+
+.form_register {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+}
+
+.form_register_container .tittle_login_container h2 {
+  color: white;
+}
+
+
+.data-box {
+  position: relative;
+}
+
+.form_register .data-box .input {
+  width: 220px;
+}
+
+
+.input {
+  padding: 10px 12px;
+  border-radius: 5px;
+  outline: none;
+  
+  background-color: #111;
+  border: none;
+  color: white;
+  border: 1px groove white;
+  height: 45px;
+}
+
+.label {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  transition: 0.4s;
+  color: white;
+  background-color: #111;
+  width: 90%;
+}
+
+.input:focus~.label, .input:valid ~ .label{
+  color: orange;
+  font-size: 12px;
+  top:-8px;
+  left: 9px;
+  width: auto;
+  padding: 0 4px;
+}
+
+
+.btn_register {
+  padding: 6px ;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+
+
+
+

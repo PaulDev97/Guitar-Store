@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Login</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="querys.css">
 </head>
@@ -23,10 +23,16 @@
 
       <form action="" class="form_login_container">
 
-        <input class="inputs_form"  type="text" placeholder="Username">
+        <div class="data-box">
+          <input required type="text" id="nombre" class="input" autocomplete="off"> 
+          <label for="nombre" class="label">Usuario</label>
+        </div>
 
-        <input class="inputs_form" type="password" placeholder="Password">
-
+        <div class="data-box">
+          <input required type="password" id="contra" class="input" autocomplete="off">
+          <label for="contra" class="label">Contraseña</label>
+        </div>
+        
         <button class="btn_form">Login</button>
 
       </form>
@@ -47,7 +53,7 @@
       </div>
 
       <div class="send_to_register_container">
-        <h3>¿No tenés cuenta?</h3><a href="">Registrate</a>
+        <h3>¿No tenés cuenta?</h3><a href="registro.html">Registrate</a>
       </div>
 
 
