@@ -82,7 +82,8 @@ const btnColorSelected = selected => {
     item.classList.add('active')
   })
 }
-/* ----------------------------------------------- */
+
+
 
 const renderGuitars = (guitar) => {
   if(guitar === 'popular'){
@@ -109,7 +110,6 @@ const popularGuitars = () => {
 
 
 /* ------------------Logica carrito----------- */
-/* const cart = document.querySelector('.cart') */
 
 const carritoContainer = document.querySelector('.products_cart')
 
@@ -378,12 +378,24 @@ const disabledBuyBtn = (btn) => {
 };
 
 
-/* Boton de comprar productos.  */
+/* Boton de comprar productos.   */
 const buyProducts = () => {
   if(guitarsCarrito.length > 0) {
     guitarsCarrito = []
     renderCart(guitarsCarrito)
     saveToLocalStorage(guitarsCarrito)
+
+    setTimeout(() => {
+      carritoContainer.innerHTML = `<div class="">
+      <span>Compra exitosa</span>
+    </div>`
+    }, 0);
+
+    setTimeout(() => {
+      renderCart()
+    }, 3000);
+
+    checkState()
   }
   
 }

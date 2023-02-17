@@ -1331,6 +1331,7 @@ body {
   background-repeat:no-repeat;
   background-size: cover;
   display: flex;
+  
   justify-content: center;
   align-items: center;
 }
@@ -1417,6 +1418,42 @@ body {
   outline: none;
   border: none;
 }
+
+
+.back_home{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.back_home div img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(200%);
+  animation: rotateNote 2s infinite alternate-reverse;
+}
+
+
+.back_home a {
+  color: orange;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+@keyframes rotateNote {
+  from {
+    transform: rotate(-30deg) ;
+  }
+  to {
+    transform: rotate(0deg);
+  }
+  
+}
+
 
 
 
