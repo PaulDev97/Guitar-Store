@@ -386,7 +386,7 @@ const buyProducts = () => {
     saveToLocalStorage(guitarsCarrito)
 
     setTimeout(() => {
-      carritoContainer.innerHTML = `<div class="">
+      carritoContainer.innerHTML = `<div class="products_purchased">
       <span>Compra exitosa</span>
     </div>`
     }, 0);
