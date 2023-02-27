@@ -278,13 +278,13 @@
   width: 300px;
   height: 440px;
   border-radius: 10px;
-  background:#393E46;
+  background:#323a48;
   display: flex;
   flex-direction: column;
   justify-content: center;
   
   align-items: center;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.80);
   padding: 15px;
 }
 
@@ -326,24 +326,18 @@
 
 
 .guitar_data h3 {
-  
+  color: rgb(215, 211, 211);
   font-size: 20px;
   
 }
 
 .guitar_data span {
-  color: rgb(223, 185, 12);
+  color: rgb(207, 157, 5);
   font-weight: 800;
   font-size: 24px;
 } 
 
-.guitar_data_container i {
 
- font-size: 30px;
- color: rgb(155, 153, 152);
- cursor: pointer;
- 
-}
 
 .guitar_card button {
   border: none;
@@ -512,7 +506,7 @@
 
 
 .price_product_container span {
-  color: rgb(189, 156, 8);
+  color: orange;
   font-weight: 600;
   font-size: 18px;
 }
@@ -1295,13 +1289,13 @@
   width: 300px;
   
   border-radius: 10px;
-  background:#393E46;
+  background:#323a48;
   display: flex;
   flex-direction: column;
   justify-content: center;
   
   align-items: center;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.80);
   padding: 15px;
 }
 
@@ -1343,13 +1337,13 @@
 
 
 .guitar_data h3 {
-  
+  color: rgb(215, 211, 211);
   font-size: 20px;
   
 }
 
 .guitar_data span {
-  color: rgb(223, 185, 12);
+  color: rgb(207, 157, 5);
   font-weight: 800;
   font-size: 24px;
 } 
@@ -1528,7 +1522,7 @@
 
 
 .price_product_container span {
-  color: rgb(189, 156, 8);
+  color: orange;
   font-weight: 600;
   font-size: 18px;
 }
@@ -2115,6 +2109,11 @@
     color: black;
   }
 
+  .type_guitar_cart span {
+    margin-top: 18px;
+    font-size: 18px;
+  }
+
 /* boton cerrar */
 .cart .back {
   display:none;
@@ -2408,6 +2407,11 @@
     color: black;
   }
 
+  .type_guitar_cart span {
+    margin-top: 16px;
+    font-size: 18px;
+  }
+
   /* boton cerrar */
   .cart .back {
     display:none;
@@ -2481,6 +2485,14 @@
     max-width: 1050px;
     background: none;
   }
+
+
+
+  .type_guitar_cart span {
+    margin-top: 18px;
+  }
+
+
 
   #about {
     max-width: 1050px;

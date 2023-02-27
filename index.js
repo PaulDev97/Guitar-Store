@@ -8,9 +8,9 @@ console.log(productsGuitars)
 
 
 
-
+/* Crear card del producto */
 const createProduct = product => {
-  const {brand, img, price, id,type} = product;
+  const {brand, img, price, id,type,icon} = product;
 
   return `
   <div class="guitar_card">
@@ -23,7 +23,10 @@ const createProduct = product => {
         <h3>${brand}</h3>
         <span>$${price}</span>
       </div>
-      <i class="fa-solid fa-circle-info"></i>
+      
+      <div class="instrument_icon">
+        <img src="${icon}" alt="">
+      </div>
     </div>
 
     <button class="add_product" 
