@@ -1,6 +1,14 @@
 
 @media screen and (max-width: 320px){
-
+  .swiper .filter_btn .active {
+    background-color: #252525;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 10px; 
+    
+    
+  }
+    
 
   .menu {
     width: 100%;
@@ -350,7 +358,10 @@
   cursor: pointer;
   font-size: 16px;
   transition:0.5s;
+
+  
 }
+
 
 
 
@@ -960,7 +971,16 @@
 }
 
 
-
+.active {
+  background-color: #252525;
+  color: white;
+  border: 2px solid gray;
+  border-radius: 10px; 
+  
+  
+}
+  
+  
 
 
 
@@ -1534,6 +1554,16 @@
   cursor: pointer;
   
 }
+
+.active {
+  background-color: #252525;
+  color: white;
+  border: 2px solid gray;
+  border-radius: 10px; 
+  
+  
+}
+  
 
 
 /* ----Menu despegable carrito ----- */
