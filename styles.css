@@ -1243,6 +1243,7 @@ body {
   cursor: pointer;
   background-color: rgb(207, 140, 16);
   text-transform: uppercase;
+  border: none;
 }
 
 .map_contact_container {
