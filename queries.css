@@ -1018,6 +1018,14 @@
   padding: 10px;
 }
 
+.main_register_container {
+  width: 90%;
+  
+  padding: 2px;
+  margin-top: 20px;
+}
+
+
 
 .active {
   background-color: #252525;
@@ -1028,6 +1036,7 @@
   
 }
   
+
   
 
 
@@ -2144,6 +2153,12 @@
 }
 
 
+.main_register_container {
+  width: 90%;
+  
+  padding: 2px;
+  margin-top: 20px;
+}
 
 
 }
