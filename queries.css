@@ -1046,14 +1046,16 @@
   .menu {
     
     position: absolute;
-    top: 60px;
-    height: 100vmin;
+    top: 62px;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.98);
     display: flex;
     justify-content: center;
     align-items: center;
     left: -100%;
     transition: 0.5s;
+    border-radius: 0 0 10px 0;
+
   }
 
   .menu ul {

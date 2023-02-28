@@ -106,7 +106,7 @@ body {
 
 
 .menu ul li a:hover {
-  color: rgb(255, 79, 39);
+  color: orange;
   
 }
 
@@ -126,9 +126,25 @@ body {
  color: white;
 }
 
+
+
 .login i {
   font-size: 20px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.login i:hover{
+  color:orange;
+}
+
+.icon_cart i {
+  transition: all 0.3s ;
+}
+
+
+.icon_cart i:hover {
+  color:orange;
 }
 
 .icon_bars_container {
