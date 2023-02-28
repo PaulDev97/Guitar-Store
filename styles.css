@@ -6,7 +6,7 @@
   list-style: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  scroll-padding: 60px;
+  scroll-padding: 70px;
 
   
 }
@@ -21,9 +21,6 @@
 body {
   background-color: #111;  
  
-  /* border: 1px solid red; */
-  
-  
 } 
 
 
@@ -1089,7 +1086,7 @@ body {
 
 .contact_container {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1240,11 +1237,13 @@ body {
   border-radius: 5px;
   margin-top: 15px;
   color: black;
-  cursor: pointer;
-  background-color: rgb(207, 140, 16);
-  text-transform: uppercase;
+  background-color: orange;
   border: none;
+  cursor: pointer;
+  
 }
+
+
 
 .map_contact_container {
   margin-top: 25px;
@@ -1261,7 +1260,7 @@ body {
 
 .footer_container {
   width: 100%;
-  margin-top: 40px;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;

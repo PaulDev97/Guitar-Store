@@ -49,7 +49,55 @@
     height: 600px;
   }
 
+  .signature_img_container {
+    width: 50%;
+    height: 100px;
+    
+    position: absolute;
+    bottom: -80px;
+    right: 10px;
+    
+  }
+
+
   .right_main_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    top:250px;
+    gap: 10px;
+    width: 180px;
+    height: 300px;
+    
+  }
+
+  
+
+
+  .guitar_paul_container {
+    height: 200px;
+    margin-top: 10px;
+    position: relative;
+    left: -12px;
+    width: 60%;
+  }
+
+  .details_link {
+    position: relative;
+    left: -10px;
+  }
+
+  .details .details_link a{
+    font-size: 14px;
+    width: 100px;
+    border: none;
+    outline: none;
+  }
+
+  .details h3, .info_guitar_paul {
     display: none;
   }
 
@@ -1075,18 +1123,55 @@
 
 
   .signature_img_container {
-    width: 70%;
+    width: 50%;
     height: 100px;
     
-    margin-top: 100px;
-    margin-left: 80px;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
     
   }
 
 
   .right_main_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    top:250px;
+    gap: 10px;
+    width: 180px;
+    height: 300px;
+    
+  }
+
+  
+
+
+  .guitar_paul_container {
+    height: 200px;
+    margin-top: 10px;
+    position: relative;
+    left: -12px;
+    width: 50%;
+  }
+
+  .details_link {
+    position: relative;
+    left: -10px;
+  }
+
+  .details .details_link a{
+    font-size: 14px;
+    width: 100px;
+  }
+
+  .details h3, .info_guitar_paul {
     display: none;
   }
+  
 
 
   /* ----Ventajas de la web---- */

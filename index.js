@@ -3,7 +3,29 @@ const productsGuitars = guitars;
 const containerRender = document.querySelector('.cards')
 const btnCategoryContainer = document.querySelector('.filter_btn')
 const btnCategory = document.querySelectorAll('.btn_scroll')
-console.log(productsGuitars)
+
+
+/* Variables de menu,carrito,botones etc */
+const carritoContainer = document.querySelector('.products_cart')
+
+const ledProducts = document.querySelector('.led_products')
+const total = document.querySelector('.total')
+const subtotal = document.querySelector('.subtotal') 
+
+
+const total_products = document.querySelector('.products_in_cart')
+const storeContainer = document.querySelector('.cards')
+const cardsContainer = document.querySelector('.cart_container')
+
+const buyProductBtn = document.querySelector('.buy_button')
+
+
+const menu = document.querySelector('.menu')
+const icon_toggle_menu = document.querySelector('.toggle')
+
+const iconCart = document.querySelector('.icon')
+const iconCloseCart = document.querySelector('.back')
+
 
 
 
@@ -104,7 +126,6 @@ const renderGuitars = (guitar) => {
 
 const popularGuitars = () => {
   const populares = productsGuitars.filter(item => item.top === 'top' )
-  console.log(populares)
 
   containerRender.innerHTML = populares.map(createProduct).join('')
 }
@@ -113,28 +134,6 @@ const popularGuitars = () => {
 
 
 /* ------------------Logica carrito----------- */
-
-const carritoContainer = document.querySelector('.products_cart')
-
-const ledProducts = document.querySelector('.led_products')
-const total = document.querySelector('.total')
-const subtotal = document.querySelector('.subtotal') 
-
-
-const total_products = document.querySelector('.products_in_cart')
-const storeContainer = document.querySelector('.cards')
-const cardsContainer = document.querySelector('.cart_container')
-
-const buyProductBtn = document.querySelector('.buy_button')
-
-
-const menu = document.querySelector('.menu')
-const icon_toggle_menu = document.querySelector('.toggle')
-
-const iconCart = document.querySelector('.icon')
-const iconCloseCart = document.querySelector('.back')
-
-
 
 let guitarsCarrito = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -464,8 +463,7 @@ const init = () => {
   iconCloseCart.addEventListener('click',closeCart)
   icon_toggle_menu.addEventListener('click',showMenu)
   
-  /* saveToLocalStorage(guitarsCarrito)
-  renderCart(guitarsCarrito) */
+  
   
   storeContainer.addEventListener('click',addProduct)
 

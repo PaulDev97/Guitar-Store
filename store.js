@@ -12,10 +12,10 @@ export const guitars = [
   {
     id:2,
     category:'electric',
-    brand: 'Fender',
-    img: './img/fender.png',
+    brand: 'Paul.T Edition',
+    img: './img/paul_timmons_guitar.png',
     type:'Electric',
-    price: 500,
+    price: 1000,
     icon:'./img/guitar_icon.png',
   },
   {
